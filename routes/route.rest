@@ -1,0 +1,15 @@
+GET  http://localhost:3000/buyers
+
+####
+
+GET  http://localhost:3000/buyers/20
+
+###
+
+POST http://localhost:3000/buyers
+Content-Type: application/json
+
+{
+    "itemName": "Cooking Oil",
+    "price": 700,
+}
