@@ -10,21 +10,20 @@ const listSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
-  quantity: {
-    type: Number,
-      required: true,
-    default: 0,
-  },
-  isSelected: {
-    type: Boolean,
-    required: true,
-    Default: false,
-  },
-  buyingDate: {
-    type: Date,
-    required: true,
-    default: Date.now(),
-  },
+    quantity: {
+      type: Number,
+      default: 0,
+      
+    },
+    isSelected: {
+      type: Boolean,
+      Default: false,
+    },
+    buyingDate: {
+      type: Date,
+
+      default: Date.now(),
+    },
 });
 
 module.exports = mongoose.model('list', listSchema)

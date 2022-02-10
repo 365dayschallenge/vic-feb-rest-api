@@ -1,8 +1,9 @@
+
 GET  http://localhost:3000/buyers
 
 ####
 
-GET  http://localhost:3000/buyers/20
+GET  http://localhost:3000/buyers/62050807dfae8f969d077d1f
 
 ###
 
@@ -11,5 +12,17 @@ Content-Type: application/json
 
 {
     "itemName": "Cooking Oil",
-    "price": 700,
+    "price": 700
+}
+###
+
+DELETE http://localhost:3000/buyers/62050807dfae8f969d077d1f
+###
+
+PATCH http://localhost:3000/buyers/62050838e48eec6d058e3468
+Content-Type: application/json
+
+{
+    "itemName": "Chips",
+    "price": 100
 }
