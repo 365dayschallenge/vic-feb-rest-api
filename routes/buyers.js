@@ -3,7 +3,11 @@ const res = require("express/lib/response");
 const router = express.Router();
 const List = require("../models/buyers");
 
+
 module.exports = router;
+
+
+
 // Get all
 router.get("/", async (req, res) => {
   try {
